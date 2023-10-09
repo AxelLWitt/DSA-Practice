@@ -15,7 +15,6 @@ var romanToInt = function(s) {
     for(let i=s.length-1;i>=0;i--){
         if(map[s[i]]<previous){
             conv -= map[s[i]]
-            preious = map[s[i]]
         }else{
             conv += map[s[i]]
             previous = map[s[i]]

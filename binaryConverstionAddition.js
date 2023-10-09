@@ -1,4 +1,4 @@
-//Two methods - one following traditional algos and a single line
+//Two methods - one following traditional algos and a one with a single line
 
 var addBinary = function(a, b) {
     return ((BigInt('0b'+a)+ BigInt('0b'+b)).toString(2))
