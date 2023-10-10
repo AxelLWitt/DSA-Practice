@@ -1,5 +1,5 @@
 
-//initalize two arrays to keep track of the elements
+//initalize two arrays to keep track of the elements - you don't need to initalize a a second array.
 var MyQueue = function() {
     //initalize a stack for pushed elements
     this.stackPush = new Array
@@ -61,12 +61,3 @@ MyQueue.prototype.peek = function(x) {
 MyQueue.prototype.empty = function() {
     return this.stackPush.length===0&&this.stackPop.length===0
 };
-
-/** 
- * Your MyQueue object will be instantiated and called as such:
- * var obj = new MyQueue()
- * obj.push(x)
- * var param_2 = obj.pop()
- * var param_3 = obj.peek()
- * var param_4 = obj.empty()
- */
