@@ -19,15 +19,9 @@ class SlinglyLinkedList{
     }
 
     insertLast(){
-        let node = new Node()
-        let curr
-        if(!this.head){
-            this.head = node
-        }else{
-            curr = this.head
-            while(!this.head){
-
-            }
+        let node = new Node(data, this.head)
+        while(!this.head){
+            
         }
     }
 }
