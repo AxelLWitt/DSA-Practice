@@ -28,7 +28,7 @@ var addBinary = function(a, b) {
     }
 
     if (carry) {
-        //if carry exists set result to the remainders in carry
+        //if carry exists to convert the integer into a string
         result+=carry;
     }
 
