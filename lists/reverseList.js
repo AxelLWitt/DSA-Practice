@@ -17,3 +17,17 @@ var reverseList = function(head) {
     //return the list
     return prev
 };
+
+var reverseList = function(head) {
+    //base case
+    if(head===null||head.next===null){
+        return head
+    }
+    //newhead is the new reversed list
+    let newHead = reverseList(head.next)
+    //once base case is found, change the nodes as you recursivly climb up
+    head.next.next = head
+    head.next = null
+    //return the new list
+    return newHead
+};
