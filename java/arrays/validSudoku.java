@@ -2,7 +2,7 @@ import java.util.*;
 
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        Set seen = new HashSet();
+        Set<int> seen = new HashSet<>();
         for(int i=0;i<board[0].length;i++){
             for(int j=0;j<board[0].length;j++){
                 if(board[i][j] != '.'){
