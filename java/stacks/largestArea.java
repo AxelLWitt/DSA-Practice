@@ -1,32 +1,3 @@
-Stack
-(6 / 7)
-
-Prerequisites
-
-Stacks
-
-Data Structures & Algorithms for Beginners
-Status
-Star
-Problem   
-Difficulty   
-Video Solution
-Code
-	
-	Valid Parentheses	
-	
-	Min Stack	
-	
-	Evaluate Reverse Polish Notation	
-	
-	Generate Parentheses	
-	
-	Daily Temperatures	
-	
-	Car Fleet	
-	
-	Largest Rectangle In Histogram	
-View on Github
 class Solution {
     public int largestRectangleArea(int[] heights) {
       int area = 0, n = heights.length;
