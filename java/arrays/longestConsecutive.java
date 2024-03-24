@@ -43,3 +43,26 @@ class Solution {
         return res;
     }
 }
+
+//easier method of achieving same result with less space used
+
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        if(nums.length==0) return 0;
+        Set<Integer> set = new HashSet<>();
+        for(int n:nums) set.add(n);
+        int longest = 0;
+        for(int n:nums){
+            if(!set.contains(n-1)){
+                int count = 1;
+                while(set.contains(n+1)){
+                    n++;
+                    count++;
+                }
+                longest = Math.max(longest, count);
+            }
+            if(longest>nums.length/2) break;
+        }
+        return longest;
+    }
+}
